@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +7,27 @@
 
 body {
     background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, sans-serif;
+    --sidebar-blue: #0284c7;
+    --background-grey: #e5e7eb;
+    --background-white: white;
+}
+
+img {
+    width: 20px;
+}
+
+img.avatar-small {
+    width: 50px;
+}
+
+img.avatar-large {
+    width: 80px;
 }
 
 #container {
     margin: 50px;
-    background-color: white;
+    background-color: var(--background-white);
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 4fr;
@@ -18,23 +35,29 @@ body {
 
 #sidebar {
     grid-row: 1 / 3;
-    background-color: blue;
+    background-color: var(--sidebar-blue);
     color: white;
     font-size: 1.3rem;
     font-weight: bold;
-    padding: 20px;
+    padding: 30px 20px;
 }
 
 #sidebar li {
     list-style-type: none;
     min-height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#sidebar img {
+    color: var(--background-white);
 }
 
 #header {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr 1fr;
-    padding: 20px;
+    padding: 0px 20px;
 }
 
 #header input {
@@ -43,7 +66,7 @@ body {
     border-radius: 20px;
     margin-left: 20px;
     border: none;
-    background-color: lightgray;
+    background-color: var(--background-grey);
 }
 
 #top-left {
@@ -72,7 +95,7 @@ button {
     width: 80px;
     border-radius: 20px;
     border: none;
-    background-color: blue;
+    background-color: var(--sidebar-blue);
     color: white;
     font-weight: bold;
 }
@@ -86,7 +109,7 @@ button {
 #content {
     display: grid;
     grid-template-columns: 2.5fr 1fr;
-    background-color: lightgrey;
+    background-color: var(--background-grey);
     padding: 20px;
     gap: 20px;
 }
@@ -98,7 +121,7 @@ button {
 #projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
     margin-bottom: 20px;
 }
 
@@ -132,6 +155,6 @@ button {
 }
 
 .card, #announcements, #trending {
-    background-color: white;
+    background-color: var(--background-white);
     border-radius: 5px;
 }
