@@ -12,6 +12,7 @@ body {
     --sidebar-blue: #0284c7;
     --background-grey: #e5e7eb;
     --background-white: white;
+    --gray-text: #4b5563;
 }
 
 img {
@@ -141,10 +142,11 @@ button {
 
 #content {
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
+    grid-template-columns: 2.9fr 1fr;
     background-color: var(--background-grey);
-    padding: 40px 35px;
+    padding: 30px 30px;
     gap: 20px;
+    font-weight: bold;
 }
 
 #projects, #announcements, #trending {
@@ -158,7 +160,40 @@ button {
 }
 
 .card {
-    min-height: 200px;
+    min-height: 100px;
+    display: grid;
+    padding: 20px;
+    line-height: 1.2rem;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.card div {
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-top: 20px;
+}
+
+.card img {
+    margin-left: 20px;
+}
+
+.card p {
+    color: var(--gray-text);
+    font-weight: normal;
+    font-size: 0.85rem;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    background-color: #fbbf24;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 #right-content {
