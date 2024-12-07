@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <main id="container">
+        
+        <div id="sidebar">
+            <ul>
+                <li>Dashboard</li>
+                <li></li>
+                <li>Home</li>
+                <li>Profile</li>
+                <li>Messages</li>
+                <li>History</li>
+                <li>Tasks</li>
+                <li>Communities</li>
+                <li></li>
+                <li>Settings</li>
+                <li>Support</li>
+                <li>Privacy</li>
+            </ul>
+        </div>
+        
+        <header id="header">
+            <div id="top-left">
+                <div>Search</div>
+                <input type="text">
+            </div>
+            <div id="top-right">
+                <div>gr1</div>
+                <div>gr2</div>
+                <div>name</div>
+            </div>
+            <div id="greeting">
+                <div>graphic</div>
+                <div id="greeting-right">
+                    <div>Hi there,</div>
+                    <div>Morgan Oakley (@morgan)</div>
+                </div>
+            </div>
+            <div id="buttons">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </header>
+
+        <div id="content">
+            <div>Your Projects
+                <div id="projects">   
+                    <div class="card">Project 1</div>
+                    <div class="card">Project 1</div>
+                    <div class="card">Project 1</div>
+                    <div class="card">Project 1</div>
+                    <div class="card">Project 1</div>
+                    <div class="card">Project 1</div>
+                </div>
+            </div>
+            <div id="right-content">
+                <div>
+                <div>Announcements</div>
+                    <div id="announcements">
+                        <div>Site Maintenance</div>
+                        <div>Community Share Day</div>
+                        <div>Updated Privacy Policy</div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                <div>Trending</div>
+                    <div id="trending">
+                        <div>@tegan</div>
+                        <div>@morgan</div>
+                        <div>@kendall</div>
+                        <div>@alex</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
+
+<!--
+
+Project Plan (rows x columns)
+1. Container (overall) 2 x 2 grid
+2. Header (top right) 2 x 2 grid inside Container, use flexbox for grid-items within
+3. Content (bottom right) flexbox
+4. Sidebar (left) 3 x 1 grid inside Container
+5. Projects 3 x 2 grid inside Content
+6. Right-Content flexbox columns inside Content (for Announcements & Trending)
+7. Announcements 3 x 1 grid inside Right-Content
+8. Trending 4 x 1 grid inside Right-Content
+
+-->
