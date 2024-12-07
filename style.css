@@ -132,6 +132,7 @@ button {
     background-color: var(--sidebar-blue);
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #buttons {
@@ -147,6 +148,7 @@ button {
     padding: 30px 30px;
     gap: 20px;
     font-weight: bold;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
 }
 
 #projects, #announcements, #trending {
@@ -198,17 +200,27 @@ button {
 
 #right-content {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
 }
 
 #announcements {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 #announcements > div {
-    min-height: 90px;
+    min-height: 65px;
+}
+
+#announcements h5 {
+    font-size: .75rem;
+    padding-bottom: 3px;
+}
+
+#announcements p {
+    color: var(--gray-text);
+    font-size: .7rem;
+    font-weight: normal;
 }
 
 #trending {
